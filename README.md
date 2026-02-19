@@ -1,2 +1,2 @@
-Le projet doit être réalisé en groupe!!! n\
+Le projet doit être réalisé en groupe!!! \
 ??
