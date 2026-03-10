@@ -10,3 +10,12 @@ h1{
     color: rgb(0, 238, 255);
     size: 100px;
 }
+
+.personnage-container {
+
+}
+.personnage {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
