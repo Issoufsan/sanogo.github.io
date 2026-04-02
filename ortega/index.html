@@ -1,0 +1,66 @@
+<html lang="fr">
+
+<head>
+ <meta charset="UTF-8">
+<title>Qui est-ce ?</title>
+ <link rel="stylesheet" href="style_jeu.css">
+ <link rel="stylesheet" href="index.js">---
+</head>
+
+<body>
+<h1>Qui est-ce ?</h1>
+<div id="main">
+<!-- affichage des 16 cartes du jeu  -->
+<p class="flotte">
+<table id="tableau">
+    <tbody>
+    <tr><td class="normal" id="8" style="width: 141px; height: 248px; background-image: url(&quot;images/8.jpg&quot;);"></td><td class="normal" id="2" style="width: 141px; height: 248px; background-image: url(&quot;images/2.jpg&quot;);"></td><td class="normal" id="12" style="width: 141px; height: 248px; background-image: url(&quot;images/12.jpg&quot;);"></td><td class="normal" id="3" style="width: 141px; height: 248px; background-image: url(&quot;images/3.jpg&quot;);"></td><td class="normal" id="7" style="width: 141px; height: 248px; background-image: url(&quot;images/7.jpg&quot;);"></td><td class="normal" id="13" style="width: 141px; height: 248px; background-image: url(&quot;images/13.jpg&quot;);"></td></tr><tr><td style="width: 141px; height: 248px;"></td><td class="normal" id="9" style="width: 141px; height: 248px; background-image: url(&quot;images/9.jpg&quot;);"></td><td class="normal" id="10" style="width: 141px; height: 248px; background-image: url(&quot;images/10.jpg&quot;);"></td><td class="normal" id="11" style="width: 141px; height: 248px; background-image: url(&quot;images/11.jpg&quot;);"></td><td class="normal" id="14" style="width: 141px; height: 248px; background-image: url(&quot;images/14.jpg&quot;);"></td><td style="width: 141px; height: 248px;"></td></tr><tr><td class="normal" id="1" style="width: 141px; height: 248px; background-image: url(&quot;images/1.jpg&quot;);"></td><td class="normal" id="4" style="width: 141px; height: 248px; background-image: url(&quot;images/4.jpg&quot;);"></td><td class="normal" id="5" style="width: 141px; height: 248px; background-image: url(&quot;images/5.jpg&quot;);"></td><td class="normal" id="0" style="width: 141px; height: 248px; background-image: url(&quot;images/0.jpg&quot;);"></td><td class="normal" id="15" style="width: 141px; height: 248px; background-image: url(&quot;images/15.jpg&quot;);"></td><td class="normal" id="6" style="width: 141px; height: 248px; background-image: url(&quot;images/6.jpg&quot;);"></td></tr></tbody>
+</table>
+</p>
+<br>
+
+<!-- Questions  -->
+<h2 id="Q1">1. A-t-il des lunettes ?</h2>
+<input id="b1O" type="button" value="Oui" onclick="oui(0)">
+<input id="b1N" type="button" value="Non" onclick="non(0)"><br><br>
+
+<h2 id="Q2">2. A-t-il une moustache ?</h2>
+<input id="b2O" type="button" value="Oui" onclick="oui(1)">
+<input id="b2N" type="button" value="Non" onclick="non(1)"><br><br>
+
+<h2 id="Q3">3. A-t-il un chapeau ?</h2>
+<input id="b3O" type="button" value="Oui" onclick="oui(2)">
+<input id="b3N" type="button" value="Non" onclick="non(2)"><br><br>
+
+<h2 id="Q4">4. A-t-il des cheveux ?</h2>
+<input id="b4O" type="button" value="Oui" onclick="oui(3)">
+<input id="b4N" type="button" value="Non" onclick="non(3)"><br><br>
+
+<h2 id="Q5">5. A-t-il une boucle d'oreille ?</h2>
+<input id="b5O" type="button" value="Oui" onclick="oui(4)">
+<input id="b5N" type="button" value="Non" onclick="non(4)"><br><br>
+
+<h2 id="Q6">6. A-t-il une barbe ?</h2>
+<input id="b6O" type="button" value="Oui" onclick="oui(5)">
+<input id="b6N" type="button" value="Non" onclick="non(5)"><br><br>
+
+<h2 id="Q7">7. A-t-il un noeud papillon ?</h2>
+<input id="b7O" type="button" value="Oui" onclick="oui(6)">
+<input id="b7N" type="button" value="Non" onclick="non(6)"><br><br>
+</div>
+<div id="bas">
+    <p>
+        <input id="bouton" type="button" value="Cliquez pour avoir la réponse" onclick="affiche(m)"></p>
+        <h2 id="reponse"></h2>
+        <p><input id="bouton" type="button" value="Cliquez pour rejouer" onclick="rejouer(T)">
+    </p>
+</div>
+<textarea id="BFI_DATA" style="width: 1px; height: 1px; display: none;"></textarea>
+
+
+<title> </title>
+
+
+</body>
+
+</html>

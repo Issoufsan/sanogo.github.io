@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#tableau {
+    margin: 0 auto;
+}
+
+.normal {
+    border: 2px solid black;
+    background-size: cover;
+    background-position: center;
+}
+
+.hidden {
+    opacity: 0.3;
+    border: 2px solid gray;
+    background-size: cover;
+    background-position: center;
+}
+
+.suspect {
+    border: 4px solid red;
+}
+
+form {
+    margin: 20px;
+}
+
+input[type="submit"] {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
