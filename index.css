@@ -1,0 +1,71 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.grille {
+    display: grid;
+    grid-template-columns: repeat(6, 180px);
+    gap: 16px;
+}
+
+.personnage {
+    border: 1px solid #333;
+    padding: 8px;
+    background: #fff;
+}
+
+.personnage img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.questions {
+    width: 350px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.question-item {
+    margin-bottom: 10px;
+}
+
+.question-item p {
+    margin: 5px 0;
+}
+
+button {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#btn-reponse, #btn-rejouer {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background-color: #e0e0e0;
+}
+
+#resultat {
+    margin-top: 15px;
+    color: #d9534f;
+    font-size: 1.2em;
+    text-align: center;
+}

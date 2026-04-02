@@ -2,22 +2,58 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style.css">
-    <title>Document</title>
+    <title>Qui est-ce ?</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Bonjour ! </h1>
+    <h1>Qui est-ce ?</h1>
+    
+    <div class="container">
+        <div id="grille-personnages" class="grille"></div>
 
-    <main>
-       <div class="personnages-container">
-            <div class="personnage">
-                <img src="src/img/" alt="Personnage 1"></div>
-            <div class="personnage">
-                <img src="src/img/" alt="Personnage 2"></div>
-            <div class="personnage">
-                <img src="src/img/" alt="Personnage 3"></div></div>
-       </div> 
-    </main>
+        <div class="questions">
+            <div class="question-item">
+                <p>1. A-t-il des lunettes ?</p>
+                <button onclick="verifier('lunettes', true, this)">Oui</button>
+                <button onclick="verifier('lunettes', false, this)">Non</button>
+            </div>
+            <div class="question-item">
+                <p>2. A-t-il une moustache ?</p>
+                <button onclick="verifier('moustache', true, this)">Oui</button>
+                <button onclick="verifier('moustache', false, this)">Non</button>
+            </div>
+            <div class="question-item">
+                <p>3. A-t-il un chapeau ?</p>
+                <button onclick="verifier('chapeau', true, this)">Oui</button>
+                <button onclick="verifier('chapeau', false, this)">Non</button>
+            </div>
+            <div class="question-item">
+                <p>4. A-t-il des cheveux ?</p>
+                <button onclick="verifier('cheveux', true, this)">Oui</button>
+                <button onclick="verifier('cheveux', false, this)">Non</button>
+            </div>
+            <div class="question-item">
+                <p>5. A-t-il une boucle d'oreille ?</p>
+                <button onclick="verifier('boucle', true, this)">Oui</button>
+                <button onclick="verifier('boucle', false, this)">Non</button>
+            </div>
+            <div class="question-item">
+                <p>6. A-t-il une barbe ?</p>
+                <button onclick="verifier('barbe', true, this)">Oui</button>
+                <button onclick="verifier('barbe', false, this)">Non</button>
+            </div>
+            <div class="question-item">
+                <p>7. A-t-il un noeud papillon ?</p>
+                <button onclick="verifier('noeud', true, this)">Oui</button>
+                <button onclick="verifier('noeud', false, this)">Non</button>
+            </div>
+            
+            <button id="btn-reponse" onclick="afficherReponse()">Cliquez pour avoir la réponse</button>
+            <button id="btn-rejouer" onclick="reinitialiser()">Cliquez pour rejouer</button>
+            <p id="resultat"></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
